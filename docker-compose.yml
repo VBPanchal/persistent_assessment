@@ -1,16 +1,16 @@
 version: "3.9"
 
 services:
-  app:
-    build: .
-    ports:
-      - "3000:3000"
-    env_file:
-      - .env
-    volumes:
-      - .:/app
-    depends_on:
-      - db
+  # app:
+  #   build: .
+  #   ports:
+  #     - "3000:3000"
+  #   env_file:
+  #     - .env
+  #   volumes:
+  #     - .:/app
+  #   depends_on:
+  #     - db
 
   db:
     image: postgres:15
